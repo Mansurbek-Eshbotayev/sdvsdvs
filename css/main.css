@@ -1,0 +1,252 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* background-color: red; */
+   background: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   overflow-y: hidden;
+}
+
+
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.game{
+  height: 100%;
+}
+
+.game__result{
+  width: 100%;
+  max-width: 700px;
+  padding: 18px 24px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid rgba(255, 255, 255, 0.289199);
+border-radius: 15px;
+margin-top: 30px;
+}
+
+.game__title{
+width: 155.48px;
+color: #FFFFFF;
+}
+
+.game__point{
+  padding: 15px 45px;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+border-radius: 8px;
+}
+
+.point__text{
+  font-family: 'BarlowSemiCondensed';
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 2.5px;
+color: #2A45C2;
+}
+
+.point__count{
+  font-family: 'BarlowSemiCondensed';
+font-size: 64px;
+line-height: 64px;
+text-align: center;
+color: #565468;
+}
+
+.start{
+  width: 100%;
+  max-width: 900px;
+
+}
+
+.frist__title , .second__title{
+font-size: 24px;
+line-height: 32px;
+color: #FFFFFF;
+text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.shot__title{
+  font-family: 'BarlowSemiCondensed';
+font-size: 42px;
+line-height: 66px;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+.shot__btn{
+  padding: 15px 60px;
+font-size: 16px;
+line-height: 19px;
+color: #3B4262;
+background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+border-radius: 8px;
+}
+
+.frist__result{
+  width: 293px;
+  height: 225px;
+  background-image: url(../images/black.png);
+  background-size: 225px 225px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.second__result{
+  width: 293px;
+  height: 225px;
+  background-image: url(../images/black.png);
+  background-size: 225px 225px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.coouse{
+  position: relative;
+  top: 20px;
+  margin-top: auto;
+  width: 200px;
+  height: 150px;
+  background-image: url(../images/ugl.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: calc(50%) calc(50%);
+}
+
+.course__img{
+  width: 100px;
+  height: 100px;
+ background-color: transparent;
+ border: none;
+ border-radius: 50%;
+}
+
+.course__img:focus{
+  box-shadow: rgb(254 254 254 / 10%) 0px -20px 35px, rgb(239 255 255 / 10%) 0px 9px 56px, rgb(218 218 228 / 10%) 0px 24px 80px;
+}
+
+.course__img--cover{
+ position: absolute;
+ top: -34px;
+ left: -20px;
+}
+
+.course__img--scissors{
+  position: absolute;
+  top: -34px;
+  right: -20px;
+ }
+
+ .course__img--stone{
+  position: absolute;
+  top: 77px;
+    right: 50px;
+}
+
+.img__none{
+  display: none;
+}
+
+.img__block{
+  display: block;
+}
+
+@keyframes circle-to-square {
+  0% {
+    width: 100%;
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    width: 100%;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.left_cover , .left_scissors ,.left_stone,.right_cover , .right_scissors ,.right_stone{
+  animation-name: circle-to-square;
+  animation-duration: 2s;
+  animation-iteration-count: none;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+@keyframes hsquare {
+  0% , 100%{
+    margin-bottom: 20px;
+  }
+  50% {
+    margin-bottom: 0;
+  }
+}
+
+.results{
+  padding: 40px 50px;
+  font-size: 30px;
+  line-height: 19px;
+  color: #3B4262;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+  border-radius: 8px;
+
+  animation-name: hsquare;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+.frist__result{
+  position: relative;
+}
+
+.left__result{
+  position: absolute;
+  top: 300px;
+  left: 100px;
+
+  animation-name: hsquare;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+.right__result{
+  position: absolute;
+  top: 300px;
+  right: 100px;
+
+  animation-name: hsquare;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: 5s;
+  animation-timing-function: ease;
+}
+
+
+
+ 
+ 
+

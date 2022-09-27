@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <section class="game">
+    <div class="container">
+      <div class="game__result">
+        <h2 class="game__title">
+          ROCK <br> PAPER <br> SCISSORS
+        </h2>
+        <div class="game__point point">
+          <span class="point__text d-block">
+            SCORE
+          </span>
+          <span class="point__count d-block">
+            12
+          </span>
+        </div>
+      </div>
+      
+      
+      <div class="start mx-auto d-flex align-items-center justify-content-between mt-5">
+        <div class="start__one frist">
+          <h3 class="frist__title text-center mb-5">
+            THE HOUSE PICKED
+          </h3>
+          <div class="frist__result text-center position-relative">
+            <img class="left_cover w-75 img__none" src="./images/cover.svg" alt="cover">
+            <img class="left_scissors w-75 img__none" src="./images/scissors.svg" alt="scissors">
+            <img class="left_stone w-75 img__none" src="./images/stone.svg" alt="stone">
+          </div>
+          <span class="results left__result">
+            
+          </span>
+        </div>
+        
+        <div class="shot text-center ">
+          <h4 class="shot__title mb-3">
+            Good luck
+          </h4>
+          <button class="shot__btn btn__again border-0 mb-3">
+            PLAY AGAIN
+          </button>
+          <button class="shot__btn btn__start border-0">
+            start
+          </button>
+        </div>
+        
+        <div class="start__two second">
+          <h3 class="second__title text-center mb-5">
+            YOU PICKED
+          </h3>
+          <div class="second__result text-center">
+            <img class="right_cover w-75 img__none" src="./images/cover.svg" alt="cover">
+            <img class="right_scissors w-75 img__none" src="./images/scissors.svg" alt="scissors">
+            <img class="right_stone w-75 img__none" src="./images/stone.svg" alt="stone">
+          </div>
+          <span class="results right__result">
+            
+          </span>
+        </div>
+      </div>
+      
+      
+      <div class="coouse mx-auto">
+        <button class="course__img course__img--cover">
+          <img class="btn__images min__cover img-fluid " src="./images/min-cover.svg" alt="cover">
+        </button>
+
+         <button class="course__img course__img--scissors">
+          <img class="btn__images min__scissors img-fluid" src="./images/min-scissors.svg" alt="scissors"> 
+        </button>
+
+        <button class="course__img course__img--stone">
+          <img class="btn__images min__stone img-fluid" src="./images/min-stone.svg" alt="stone">
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
